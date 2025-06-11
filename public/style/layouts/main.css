@@ -1,0 +1,120 @@
+.main
+{
+	grid-area: main;
+
+	position: relative;
+	z-index: 0;
+
+	display: block;
+	padding: 2.2rem 9% 3rem 7%;
+}
+
+
+
+.subjectTitle
+{
+	display: block;
+	margin-bottom: 2.5rem;
+
+	font-size: 1.8rem;
+	font-weight: 900;
+
+	color: hsl(0, 100%, 8%);
+}
+
+
+
+.sectionList
+{
+	display: block;
+	margin-left: 7%;
+
+	list-style-type: none;
+}
+
+
+
+.section
+{
+	display: block;
+	margin-top: 2.5rem;
+}
+
+
+
+.section__title
+{
+	display: block;
+	margin-bottom: 1.7rem;
+
+	font-size: 1.3rem;
+	font-weight: 700;
+
+	color: hsl(0, 100%, 8%);
+}
+
+
+
+.section__courseNoteList
+{
+	display: block;
+	margin-left: 6%;
+
+	list-style-type: none;
+}
+
+
+
+.section__courseNote
+{
+	display: block;
+	margin-top: 0.7rem;
+}
+
+
+
+.section__courseNoteLink
+{
+	position: relative;
+
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+
+
+.section__courseNoteLink::before
+{
+	content: '\1F5CE';
+
+	position: relative;
+	top: -0.2rem;
+	left: 0;
+
+	display: block;
+	margin-right: 1rem;
+	font-size: 1.2rem;
+}
+
+
+
+.section__courseNoteNo
+{
+	display: block;
+	margin-right: 0.3rem;
+}
+
+
+
+.section__courseNoteTitle
+{
+	display: block;
+}
+
+
+
+.section__courseNoteLink:hover .section__courseNoteTitle
+{
+	text-decoration: underline;
+}

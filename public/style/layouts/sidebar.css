@@ -1,0 +1,55 @@
+.sidebar
+{
+	grid-area: sidebar;
+	
+	position: relative;
+	z-index: 1;
+	
+	display: block;
+	padding: 2rem 0;
+	
+	background-color: hsl(0, 71%, 45%);
+	box-shadow: -8px 0 4px 10px #0007;
+	color: #fff;
+}
+
+
+
+.sidebar__title
+{
+	display: block;
+	margin: 0 10% 1.2rem;
+
+	font-size: 1.1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+
+
+.sidebar__subjectList
+{
+	display: block;
+	list-style-type: none;
+}
+
+
+
+.sidebar__subjectLink
+{
+	display: block;
+	padding: 0.8rem 10% 0.8rem 15%;
+}
+
+
+
+.sidebar__subjectLink:hover
+{
+	position: relative;
+	z-index: 2;
+
+	background-color: hsl(0, 74%, 58%);
+	box-shadow:
+		4px 0 #fff inset,
+		-3px 0 5px #0002;
+}

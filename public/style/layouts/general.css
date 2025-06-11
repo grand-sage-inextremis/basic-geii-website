@@ -1,0 +1,13 @@
+body
+{
+	display: grid;
+	grid-template-columns: clamp(15rem, 25vw, 20rem) 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		'topbar topbar'
+		'sidebar main'
+		'footer footer';
+
+	min-width: 44rem;
+	min-height: 100vh;
+}
