@@ -1,10 +1,5 @@
 .topbar
 {
-	grid-area: topbar;
-
-	position: sticky;
-	z-index: 2;
-	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -16,12 +11,57 @@
 
 
 
+.topbar__sidebarSwitch
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+
+	padding-left: 1rem;
+	padding-right: 1.5rem;
+
+	cursor: pointer;
+
+	background-color: hsl(0, 100%, 20%);
+	box-shadow: 0 0px 2px #000a;
+}
+
+
+
+.topbar__sidebarSwitch::before
+{
+	content: '\002630';
+
+	position: relative;
+	top: -0.1rem;
+	left: 0;
+
+	display: inline;
+	font-size: 1.3rem;
+}
+
+
+
 .topbar__title
 {
+	flex-grow: 1;
+
 	display: block;
 	padding: 0.5rem 1.5rem;
 
 	font-size: 1rem;
 	font-weight: 900;
+	text-align: center;
 	text-transform: uppercase;
+}
+
+
+
+@media (min-width: 44rem)
+{
+	.topbar__sidebarSwitch
+	{
+		display: none;
+	}
 }

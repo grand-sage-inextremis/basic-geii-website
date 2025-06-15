@@ -1,28 +1,8 @@
 .sidebar
 {
-	grid-area: sidebar;
-	
-	position: relative;
-	z-index: 1;
-	
-	display: block;
-	padding: 2rem 0;
-	
 	background-color: hsl(0, 71%, 45%);
 	box-shadow: -8px 0 4px 10px #0007;
 	color: #fff;
-}
-
-
-
-.sidebar__title
-{
-	display: block;
-	margin: 0 10% 1.2rem;
-
-	font-size: 1.1rem;
-	font-weight: 900;
-	text-transform: uppercase;
 }
 
 
@@ -38,7 +18,7 @@
 .sidebar__subjectLink
 {
 	display: block;
-	padding: 0.8rem 10% 0.8rem 15%;
+	padding: 0.8rem 5vw;
 }
 
 
@@ -52,4 +32,68 @@
 	box-shadow:
 		4px 0 #fff inset,
 		-3px 0 5px #0002;
+}
+
+
+
+@media (max-width: 44rem) and (not (width: 44rem))
+{
+	.sidebar
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		padding: 1rem 0 1.4rem;
+
+		text-align: center;
+	}
+
+
+
+	.sidebar::before
+	{
+		content: '';
+		flex-grow: 1;
+	}
+
+
+	
+	.sidebar::after
+	{
+		content: '';
+		flex-grow: 2;
+	}
+
+
+
+	.sidebar__title
+	{
+		display: none;
+	}
+}
+
+
+
+@media (min-width: 44rem)
+{
+	.sidebar
+	{
+		display: block;
+		padding: 2rem 0;
+
+		text-align: left;
+	}
+
+
+
+	.sidebar__title
+	{
+		display: block;
+		margin: 0 3vw 1.2rem;
+
+		font-size: 1.1rem;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
 }
