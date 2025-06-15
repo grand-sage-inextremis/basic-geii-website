@@ -1,0 +1,23 @@
+{
+	"name": "basic-geii-website",
+	"version": "1.0.0",
+	"description": "This website aims to provide access to course notes in electrical engineering.",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/grand-sage-inextremis/basic-geii-website.git"
+	},
+	"author": "Grand Sage InExtremis <grand.sage.inextremis@gmail.com>",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/grand-sage-inextremis/basic-geii-website/issues"
+	},
+	"homepage": "https://github.com/grand-sage-inextremis/basic-geii-website#readme",
+	"dependencies": {
+		"express": "^5.1.0"
+	},
+	"type": "module"
+}

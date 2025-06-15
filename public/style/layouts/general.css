@@ -1,0 +1,98 @@
+.page
+{
+	display: flex;
+	flex-flow: column nowrap;
+	min-width: 18rem;
+	min-height: 100vh;
+}
+
+
+
+.page__topbar
+{
+	position: relative;
+	z-index: 2;
+}
+
+
+
+.topbar__sidebarSwitch
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+
+
+.page__center
+{
+	flex-grow: 1;
+
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+}
+
+
+
+.page__sidebar
+{
+	white-space: nowrap;
+
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.page__main
+{
+	position: relative;
+	z-index: 0;
+}
+
+
+
+.page__footer
+{
+	position: relative;
+	z-index: 2;
+}
+
+
+
+@media (max-width: 44rem) and (not (width: 44rem))
+{
+	.page__sidebar
+	{
+		flex-grow: 1;
+	}
+
+
+
+	#sidebarSwitch:not(:checked) ~ .page .page__sidebar
+	{
+		display: none;
+	}
+
+
+
+	#sidebarSwitch:checked ~ .page .page__main
+	{
+		display: none;
+	}
+}
+
+
+
+@media (min-height: 20rem)
+{
+	.page__topbar
+	{
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+}
